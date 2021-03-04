@@ -1,5 +1,8 @@
 import React from 'react';
 import Child from './child';
+import { BrowserRouter, Link } from "react-router-dom";
+
+
 class Test extends React.Component {
   constructor() {
     super();
@@ -17,6 +20,8 @@ class Test extends React.Component {
         <button onClick={this.incrementcount}> click to Increment value by 1</button>
         <h3>Now the value of the counter is {this.state.counter}</h3>
         <Child value = {this.state.counter} />
+        <Link to={'/links'}> Homepage </Link><br />
+
       </React.Fragment>
     )
   }

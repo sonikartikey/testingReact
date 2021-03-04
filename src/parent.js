@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter, Link } from "react-router-dom";
+
+
 const a = "Kartikey"
 const age = 23
 class Parent extends React.Component {
@@ -15,6 +18,8 @@ class Parent extends React.Component {
       <React.Fragment>
         <h1>Please click on the button to vote</h1>
         <button onClick={this.scream}>click here to vote</button>
+        <Link to={'/links'}> Homepage </Link><br />
+        
       </React.Fragment>
     )
   }
