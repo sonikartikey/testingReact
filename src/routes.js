@@ -4,9 +4,11 @@ import { Route, Redirect, Switch, Link } from "react-router-dom";
 import Parent from './parent';
 import Child from './child.js';
 import Login from './login.js';
+import Signup from './signup.js';
 import Test from './test.js';
 import Testcase1 from './testcase1.js';
 import Lifecycle1 from './lifecycle1.js';
+import Homepage from './components/homepage.js';
 import Axiostest from './axiostest.js';
 import Test3 from './functionalcomponent.js';
 import Links from './links.js';
@@ -16,8 +18,10 @@ const routes = (
     <Switch>    
       <Route exact path='/' render={() => (<Redirect to='/links' />)} />
       <Route path='/links' component={Links} />
+      <Route path='/signup' component={Signup} />
+      <Route path='/homepage' component={Homepage} />
       <Route path='/login' component={Login} />
-      <Route path='/child' component={Child} />
+      <Route path='/child' component={Child}  />
       <Route path='/parent' component={Parent} />
       <Route path='/lifecycle' component={Lifecycle1} />
       <Route path='/incrementCounter' component={Test} />

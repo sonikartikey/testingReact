@@ -11,7 +11,7 @@ class Lifecycle1 extends React.Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     // alert("hello will mount")
     console.log("In WILL Mount in Lifecycle1")
     console.log("state in will mount : " + this.state.sum)
